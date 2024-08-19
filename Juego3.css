@@ -1,0 +1,91 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #0066cc;
+}
+
+.score-board {
+    margin-bottom: 20px;
+}
+
+.score-board p {
+    font-size: 20px;
+    color: #0066cc;
+}
+
+.game {
+    margin-top: 20px;
+}
+
+.question p {
+    font-size: 18px;
+}
+
+#letter {
+    font-size: 48px;
+    color: #0066cc;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #004c99;
+}
+
+.option.correct {
+    animation: correctAnimation 0.5s ease-out;
+}
+
+.option.wrong {
+    animation: wrongAnimation 0.5s ease-out;
+}
+
+@keyframes correctAnimation {
+    0% { background-color: #28a745; transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { background-color: #0066cc; transform: scale(1); }
+}
+
+@keyframes wrongAnimation {
+    0% { background-color: #dc3545; transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { background-color: #0066cc; transform: scale(1); }
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería de letras</title>
+    <link rel="stylesheet" href="Juego3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aprende con Letras</h1>
+        <div class="score-board">
+            <p>Puntaje: <span id="score">0</span></p>
+        </div>
+        <div class="game">
+            <div class="question">
+                <p>Selecciona la imagen que comienza con la letra:</p>
+                <h2 id="letter">A</h2>
+            </div>
+            <div class="options">
+                <button class="option">🍎</button>
+                <button class="option">🐶</button>
+                <button class="option" data-answer="correcto">🌳</button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    
+    <!-- Elementos de audio para efectos de sonido -->
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="wrongSound" src="wrong.mp3"></audio>
+    
+    <script src="Juego3.js"></script>
+</body>
+</html>
+
+
